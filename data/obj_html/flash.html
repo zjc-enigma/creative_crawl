@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.css">
+  </head>
+
+  <body>
+    <div class="container projects">
+
+      {% for flash in flash_list %}
+        <div class="col-sm-6 col-md-4 col-lg-3 ">
+          <div class="thumbnail">
+            {% include flash ignore missing %}
+          </div>
+      </div>
+      {% endfor %}
+
+    </div>
+  </body>
+  <script>
+   <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  </script>
+</html>
